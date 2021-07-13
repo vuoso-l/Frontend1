@@ -1,0 +1,40 @@
+header{
+    background-color: #E6E6E6;
+    text-align: center;
+}
+
+h1, h2{
+    text-align: center;
+    color: #005677;
+    text-transform: uppercase;
+    background-color: #C4C4C4;
+}
+
+h1{
+    margin: 0px auto 70px;
+}
+
+h2{
+    text-align: left;
+}
+
+span, dt{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #005677;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section{
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 150px;
+}
+
+.imgFooter{
+    width: 35px;
+}
