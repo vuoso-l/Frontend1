@@ -1,0 +1,62 @@
+/* importo la fuente de texto desde fonts google*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap');
+
+body{
+    /* utilizo font google en todo el documento*/
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    color: white;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3{
+    font-style: italic;
+}
+
+.banner{
+    /*atajo de creación de background*/
+    background: wheat url("../img/lemon-pie-1.svg") no-repeat;
+    background-size: cover;
+    /*
+    background-color: wheat;
+    background-image: url("../img/lemon-pie-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    height: 400px;
+    position: relative;
+}
+
+.banner p{
+    color: white;
+}
+
+.opacidad{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+}
+
+/* Footer */
+footer{
+    background-color: #ccc;
+    text-align: center;
+}

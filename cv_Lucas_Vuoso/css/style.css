@@ -1,0 +1,44 @@
+/* importo la fuente de texto desde fonts google*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap');
+
+/* Estilos generales*/
+body{
+    /* utilizo font google en todo el documento*/
+    font-family: 'Inter', sans-serif;
+    background-color:aliceblue;
+}
+
+/* Links en color negro y sin subrayado*/
+a{
+    color: black;
+    text-decoration: none;
+}
+
+h1{
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3{
+    font-style: italic;
+}
+
+.banner{
+    /*atajo de creación de background*/
+    background: rgb(190, 245, 179) url("../img/IMG_20210325_103544343.jpg") no-repeat;
+    background-size: cover;    
+    height: 200px;
+    position: relative;
+}
+
+/* Footer */
+footer{
+    background-color: #ccc;
+    text-align: center;
+}
