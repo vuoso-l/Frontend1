@@ -1,26 +1,169 @@
 /* Importo fuente desde fonts google*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@100;300;400;500;700;900&display=swap");
 
-/* Estilos Generales */ 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    margin: 40px auto;
-    width: 70%;
-  }
- 
- a{
-     display: inline-block;
-     text-decoration: none; 
- }
+  font-family: "Roboto", sans-serif;
+  margin: 40px auto;
+  width: 70%;
+  width: 1024px;
+}
 
-/* Header */  
-.info{
-    background-color: #1CD1B0;
-    color: #000000;
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Header */
+.info {
+  background-color: #1cd1b0;
+  color: #000000;
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 17, 58px;
+  text-transform: capitalize;
+  height: 38px;
+  left: 0px;
+  top: 0px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #00669f;
+  z-index: 999;
+  font-weight: 400px;
+  font-size: 40px;
+  line-height: 46, 88px;
+  color: #000000;
+  text-transform: capitalize;
+  height: 101px;
+  left: 0px;
+  top: 38px;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+/* Estilos boxes */
+.container {
+  margin: 0 auto;
+  position: relative;
+  margin: 100px 0px;
+}
+
+.card {
+    position: relative;
+  width: 300px;
+  height: 529px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+  display: inline-block;
+}
+
+.card-img {
+    position: relative;
+  width: 300px;
+  height: 193px;
+  background: url("../img/back_batman.svg");
+  border-radius: 16px 16px;
+}
+
+.card-img img{
+    position: absolute;
+    top: 6.25%;
+    left: 20px;
+}
+
+.card-text {
+  position: relative;
+  width: 300px;
+  height: 236px;
+  margin-bottom: 30px;
+}
+
+.card-text img {
+  position: absolute;
+  left: 100px;
+  top: -59px;
+  width: 120;
+  height: 118px;
+    border-radius: 50%;
+    background: #C4C4C4;
+}
+
+.card-text h2 {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  text-align: center;
+  width: 122;
+  height: 35;
+  font-weight: 400px;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.card-text p {
+  position: absolute;
+  left: 20px;
+  top: 120px;
+  width: 267px;
+  height: 113px;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.card-text p:first-letter {
+    text-transform: uppercase;
+}
+
+.card-button{    
+width: 128.78px;
+height: 48.52px;
+left: 117px;
+background: #00669F;
+text-align: center;
+}
+
+.card-button a{
+    width: 56px;
+height: 18px;
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 17,58px;
+  color: #F3F3F3;
+}
+
+.card-button a:first-letter {
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+  background-color: #00669f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff9f9;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 18, 75px;
+  height: 51px;
+  left: 0px;
+  top: 972px;
+}
+
+footer:first-letter {
+    text-transform: uppercase;
+}
+
+footer span{
+    text-transform: uppercase;
 }
