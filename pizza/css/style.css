@@ -1,0 +1,124 @@
+/* Importo fuente desde fonts google*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@100;300;400;500;700;900&display=swap");
+
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 40px auto;
+  width: 70%;
+  width: 1024px;
+}
+
+ul, ol{
+    list-style-type: none;
+    display: flex;   
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* Header*/
+header{
+    width: 1024px;
+    height: 100px;
+    background-color: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoHeader{
+    display: flex;
+    align-items: center;
+}
+
+.pizza{
+    color: #39B24A;
+}
+
+.and{
+    color: #F3F3F3;
+}
+
+.front{
+    color: #FC200C;
+}
+
+.menu{
+  width: 284px;
+  height: 19px;
+  
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+line-height: 19px;
+color: #F3F3F3;
+}
+
+.menu ul li a{
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F3F3F3;
+}
+
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.listaConImagen{
+  width: 50%;
+}
+
+/* Footer */
+footer{
+  width: 1024px;
+    height: 150px;
+    background-color: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuLista{
+  width: 78px;
+  height: 112px;
+}
+
+.menuLista ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+.menuLista ul li a{
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F3F3F3;
+}
+
+.logoFooter{
+  display: flex;
+    align-items: center;
+}
