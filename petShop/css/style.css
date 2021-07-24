@@ -1,16 +1,69 @@
 /* Importo fuente desde fonts google*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&display=swap");
 
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  max-width: 1024px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 40px auto;
   width: 70%;
 }
 
-header,
-main,
-footer {
-  max-width: 1025px;
+ul,
+ol {
+  list-style-type: none;
+  display: flex;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Estilos compartidos header - footer */
+.primerHeader,
+.segundoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primerHeader,
+.tercerFooter {
+  padding: 2px 30px;
+  background-color: #222222;
+}
+
+.segundoHeader,
+.primerFooter {
+  background-color: #f0a83e;
+  padding: 10px;
+}
+
+.primerHeader p,
+.tercerFooter p {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 100;
+  padding: 0 10px;
+}
+
+h1,
+h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
 }
 
 /* Header*/
@@ -18,62 +71,130 @@ header {
   color: #f3f3f3;
 }
 
-.primerHeader,
-.tercerFooter {
-    width: 1024px;
-left: calc(50% - 1024px/2);
-  background-color: #222222;
-}
-
-.primerHeader p {
-    top: 0px;
-  display: inline-block;
-}
-
-.segundoHeader, .primerFooter {
-width: 1024px;
-/*height: 62px;*/
-left: calc(50% - 1024px/2);
-  background-color: #f0a83e;
-  top: 20px;
+.primerHeader > div {
+  display: flex;
 }
 
 .segundoHeader span {
   color: #3c2313;
 }
 
-ul li {
-  display: inline-block;
+.segundoHeader nav ul li a {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 100;
+  padding: 0 3px;
+  color: #ffffff;
 }
 
 /* Main*/
-section {
-  text-align: center;
+.segundoSection {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 40px;
+}
+
+.banner,
+.cards div img {
+  max-width: 100%;
+}
+
+section ul {
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cards div {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+}
+
+.tercerSection{
+  padding: 50px 0;
+}
+
+h3{
+  text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #3C2313;
+    padding: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input{
+  background: #3C2313;
+  border-radius: 15px;
+  padding: 5px 80px;
+  font-size: 9px;
+    line-height: 11px;
+}
+
+form div{
+  display: flex;
+}
+
+form div button{
+  padding: 5px 20px;
+  border-radius: 15px;
+  margin: 0px 2px;
+  font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+}
+
+.reset{
+  background: #8A8787;
+}
+
+.submit{
+  background: #F0A83E;
 }
 
 /* Footer */
-.primerFooter{
-font-weight: 700;
-font-size: 20px;
-color: #ffffff;
+.primerFooter {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
 }
 
-.segundoFooter{
-    width: 1024px;
-    background: #3C2313;
+.segundoFooter {
+  background: #3c2313;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.segundoFooter p{
-    color: #FFFFFF;
+.segundoFooter > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/*
-.segundoFooter span{
-    display: inline-block;
-}*/
+
+.localidad,
+.telefono,
+.correo {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.segundoFooter p {
+  color: #ffffff;
+}
 
 .tercerFooter {
   color: #ffffff;

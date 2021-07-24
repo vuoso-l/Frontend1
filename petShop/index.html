@@ -12,10 +12,10 @@
     <header>
         <div class="primerHeader">
             <p>Grandes ofertas en comederos</p>
-            <span>
+            <div>
                 <p>Español</p>
                 <p>ARG$</p>
-            </span>
+            </div>
         </div>
         <div class="segundoHeader">            
             <h1><i class="fas fa-cat"></i><span>FRONT</span> CAT&DOG<i class="fas fa-dog"></i></h1>            
@@ -31,9 +31,9 @@
     </header>
     <main>
         <section>
-            <img src="img/Slide.svg" alt="Hero">
+            <img class="banner" src="img/Slide.svg" alt="Hero">
         </section>
-        <section>
+        <section class="segundoSection">
             <!--Productos-->
             <img src="img/pawprint1.svg" alt="pawprint">
             <h2>Productos destacados</h2>
@@ -60,19 +60,23 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="tercerSection">
             <h3>Contáctanos</h3>
-            <label for="nombreYApellido"></label>
-            <input type="text" placeholder="Nombre y apellido">
-            <br>
-            <label for="email"></label>
-            <input type="email" placeholder="Inngresá tu correo electrónico">
-            <br>
-            <label for="telefono"></label>
-            <input type="tel" placeholder="Teléfono">
-            <br>
-            <button type="reset">Resetear</button>
-            <button type="submit">Enviar</button>
+            <form>
+                <label for="nombreYApellido"></label>
+                <input type="text" placeholder="Nombre y apellido">
+                <br>
+                <label for="email"></label>
+                <input type="email" placeholder="Inngresá tu correo electrónico">
+                <br>
+                <label for="telefono"></label>
+                <input type="tel" placeholder="Teléfono">
+                <br>
+                <div>                    
+                    <button class="reset" type="reset">Resetear</button>
+                    <button class="submit" type="submit">Enviar</button>
+                </div>
+            </form>
         </section>
     </main>
     <footer>
@@ -80,21 +84,30 @@
             <p><i class="far fa-envelope"></i>Suscríbete para más novedades</p>
         </div>
         <div class="segundoFooter">
-            <span>
-                <i class="fas fa-map-marked-alt"></i>
-                <p>Localidad. </p>
-                <p>Calle, provincia</p>
-            </span>
-            <span>
-                <i class="fas fa-phone-volume"></i>
-                <p>Teléfono. </p>
-                <p>Número de teléfono</p>
-            </span>
-            <span>
-                <i class="fas fa-envelope-open-text"></i>
-                <p>Correo electrónico. </p>
-                <p>Dirección de correo</p>
-            </span>
+            <div>
+                <div class="localidad">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <div>                        
+                        <p>Localidad. </p>
+                        <p>Calle, provincia</p>
+                    </div>
+                </div>
+                <div class="telefono">
+                    <i class="fas fa-phone-volume"></i>
+                    <div>                        
+                        <p>Teléfono. </p>
+                        <p>Número de teléfono</p>
+                    </div>
+                </div>
+                <div class="correo">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <div>                        
+                        <p>Correo electrónico. </p>
+                        <p>Dirección de correo</p>
+                    </div>
+                </div>
+            </div>
+            <h4><i class="fas fa-cat"></i><span>FRONT</span> CAT&DOG<i class="fas fa-dog"></i></h4>
         </div>
         <div class="tercerFooter">
             <p>Todos los derechos reservados Front End</p>
