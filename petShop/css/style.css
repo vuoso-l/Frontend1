@@ -55,13 +55,13 @@ a {
 .tercerFooter p {
   font-size: 10px;
   line-height: 12px;
-  font-weight: 100;
+  font-weight: 400;
   padding: 0 10px;
 }
 
 h1,
 h4 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 23px;
 }
@@ -82,12 +82,17 @@ header {
 .segundoHeader nav ul li a {
   font-size: 13px;
   line-height: 15px;
-  font-weight: 100;
+  font-weight: 400;
   padding: 0 3px;
   color: #ffffff;
 }
 
 /* Main*/
+.banner,
+.cards div img {
+  max-width: 100%;
+}
+
 .segundoSection {
   display: flex;
     flex-wrap: wrap;
@@ -96,24 +101,41 @@ header {
     padding: 10px 20px 40px;
 }
 
-.banner,
-.cards div img {
-  max-width: 100%;
+h2{
+  font-size: 40px;
+line-height: 47px;
+font-weight: 700;
+color: #3C2313;
+padding: 10px 0;
 }
 
 section ul {
-  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #666666;
+}
+
+section ul li{
+  padding: 10px 15px;
 }
 
 .cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;  
 }
 
 .cards div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.cards div p{
+  font-size: 15px;
+line-height: 18px;
+font-weight: 400;
+color: #3C2313;
 }
 
 .tercerSection{
@@ -129,13 +151,13 @@ h3{
     padding: 20px 0;
 }
 
-form {
+.tercerSection form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-form input{
+.tercerSection form input{
   background: #3C2313;
   border-radius: 15px;
   padding: 5px 80px;
@@ -143,11 +165,11 @@ form input{
     line-height: 11px;
 }
 
-form div{
+.tercerSection form div{
   display: flex;
 }
 
-form div button{
+.tercerSection form div button{
   padding: 5px 20px;
   border-radius: 15px;
   margin: 0px 2px;
@@ -165,10 +187,43 @@ color: #FFFFFF;
 }
 
 /* Footer */
-.primerFooter {
+.primerFooter {  
+  display: flex;
+}
+
+.primerFooter p{
+  width: 50%;
   font-weight: 700;
   font-size: 20px;
+  line-height: 23px;
   color: #ffffff;
+}
+
+.primerFooter form{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.primerFooter form input{
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  color: #A0A0A0;
+  background: #FFFFFF;
+border-radius: 15px;
+padding: 10px 65px 10px 15px;
+margin: 0 5px;
+}
+
+.primerFooter form button{
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 11px;
+  color: #FFFFFF;
+background: #3C2313;
+border-radius: 15px;
+padding: 5px 10px;
 }
 
 .segundoFooter {
