@@ -66,6 +66,11 @@ h4 {
   line-height: 23px;
 }
 
+.animal {
+  font-size: 15px;
+  color: palegoldenrod;
+}
+
 /* Header*/
 header {
   color: #f3f3f3;
@@ -77,6 +82,7 @@ header {
 
 .segundoHeader span {
   color: #3c2313;
+  padding-right: 5px;
 }
 
 .segundoHeader nav ul li a {
@@ -95,18 +101,18 @@ header {
 
 .segundoSection {
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px 40px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px 40px;
 }
 
-h2{
+h2 {
   font-size: 40px;
-line-height: 47px;
-font-weight: 700;
-color: #3C2313;
-padding: 10px 0;
+  line-height: 47px;
+  font-weight: 700;
+  color: #3c2313;
+  padding: 10px 0;
 }
 
 section ul {
@@ -117,12 +123,12 @@ section ul {
   color: #666666;
 }
 
-section ul li{
+section ul li {
   padding: 10px 15px;
 }
 
 .cards {
-  display: flex;  
+  display: flex;
 }
 
 .cards div {
@@ -131,24 +137,24 @@ section ul li{
   align-items: center;
 }
 
-.cards div p{
+.cards div p {
   font-size: 15px;
-line-height: 18px;
-font-weight: 400;
-color: #3C2313;
+  line-height: 18px;
+  font-weight: 400;
+  color: #3c2313;
 }
 
-.tercerSection{
+.tercerSection {
   padding: 50px 0;
 }
 
-h3{
+h3 {
   text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 29px;
-    color: #3C2313;
-    padding: 20px 0;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #3c2313;
+  padding: 20px 0;
 }
 
 .tercerSection form {
@@ -157,41 +163,44 @@ h3{
   align-items: center;
 }
 
-.tercerSection form input{
-  background: #3C2313;
+.tercerSection form input {
+  background: #3c2313;
   border-radius: 15px;
   padding: 5px 80px;
   font-size: 9px;
-    line-height: 11px;
+  line-height: 11px;
+  margin-top: 5px;
 }
 
-.tercerSection form div{
+.tercerSection form div {
   display: flex;
 }
 
-.tercerSection form div button{
+.tercerSection form div button {
   padding: 5px 20px;
   border-radius: 15px;
   margin: 0px 2px;
   font-size: 16px;
-line-height: 19px;
-color: #FFFFFF;
+  line-height: 19px;
+  color: #ffffff;
+  margin-top: 40px;
 }
 
-.reset{
-  background: #8A8787;
+.reset {
+  background: #8a8787;
 }
 
-.submit{
-  background: #F0A83E;
+.submit {
+  background: #f0a83e;
 }
 
 /* Footer */
-.primerFooter {  
+.primerFooter {
   display: flex;
+  align-items: center;
 }
 
-.primerFooter p{
+.primerFooter p {
   width: 50%;
   font-weight: 700;
   font-size: 20px;
@@ -199,31 +208,31 @@ color: #FFFFFF;
   color: #ffffff;
 }
 
-.primerFooter form{
+.primerFooter form {
   display: flex;
   justify-content: flex-end;
   width: 50%;
 }
 
-.primerFooter form input{
+.primerFooter form input {
   font-weight: 400;
   font-size: 9px;
   line-height: 11px;
-  color: #A0A0A0;
-  background: #FFFFFF;
-border-radius: 15px;
-padding: 10px 65px 10px 15px;
-margin: 0 5px;
+  color: #a0a0a0;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 10px 65px 10px 15px;
+  margin: 0 5px;
 }
 
-.primerFooter form button{
+.primerFooter form button {
   font-weight: 700;
   font-size: 9px;
   line-height: 11px;
-  color: #FFFFFF;
-background: #3C2313;
-border-radius: 15px;
-padding: 5px 10px;
+  color: #ffffff;
+  background: #3c2313;
+  border-radius: 15px;
+  padding: 5px 10px;
 }
 
 .segundoFooter {
@@ -233,21 +242,47 @@ padding: 5px 10px;
   justify-content: space-between;
 }
 
-.segundoFooter > div {
+.contacto {
   display: flex;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.imagenContacto {
+  padding: 10px;
+  font-size: 40px;
+  color: #8a8787;
+  border-radius: 50%;
+  background: #c4c4c4;
+  border: 2px solid #786960;
+}
+
+.contacto div {
+  display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  align-items: center;
 }
 
-.localidad,
-.telefono,
-.correo {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
+.contacto div p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  padding-left: 20px;
 }
 
-.segundoFooter p {
+.contacto div .contactoAclaracion {
+  font-size: 10px;
+  line-height: 12px;
+  color: #8a8787;
+}
+
+h4 {
+  color: #f0a83e;
+  padding-right: 60px;
+}
+
+h4 span {
   color: #ffffff;
 }
 
