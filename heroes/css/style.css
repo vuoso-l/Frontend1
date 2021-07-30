@@ -8,11 +8,20 @@
   box-sizing: border-box;
 }
 
+header, main, footer{
+  max-width: 1024px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 40px auto;
   width: 70%;
-  width: 1024px;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  display: flex;
 }
 
 a {
@@ -24,53 +33,48 @@ a {
 .info {
   background-color: #1cd1b0;
   color: #000000;
-  font-weight: 400px;
   font-size: 15px;
-  line-height: 17, 58px;
+  font-weight: 400;
   text-transform: capitalize;
-  height: 38px;
-  left: 0px;
-  top: 0px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
 }
 
 header {
   position: sticky;
-  top: 0;
   background-color: #00669f;
   z-index: 999;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 40px;
-  line-height: 46, 88px;
   color: #000000;
-  text-transform: capitalize;
-  height: 101px;
-  left: 0px;
-  top: 38px;
+  text-transform: capitalize;  
   box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+  display: flex;
 }
 
-/* Estilos boxes */
+/* Estilos cards */
 .container {
-  margin: 0 auto;
-  position: relative;
-  margin: 100px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-    position: relative;
-  width: 300px;
+  width: 100%;
   height: 529px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 10px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
-.card-img {
-    position: relative;
-  width: 300px;
-  height: 193px;
+.card-img {  
+  position: relative;
   background: url("../img/back_batman.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px 16px;
+  height: 229px;
+  display: flex;
 }
 
 .card-img img{
@@ -80,42 +84,35 @@ header {
 }
 
 .card-text {
-  position: relative;
-  width: 300px;
+  position: relative;  
   height: 236px;
   margin-bottom: 30px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-text img {
   position: absolute;
-  left: 100px;
+  left: calc(50% - 59px);
   top: -59px;
-  width: 120;
-  height: 118px;
     border-radius: 50%;
     background: #C4C4C4;
 }
 
 .card-text h2 {
-  position: absolute;
-  top: 70px;
-  left: 50px;
-  text-align: center;
-  width: 122;
-  height: 35;
-  font-weight: 400px;
+  padding-top: 60px;
+  text-align: center;  
   font-size: 30px;
   line-height: 35px;
   color: #000000;
   text-transform: uppercase;
 }
 
-.card-text p {
-  position: absolute;
-  left: 20px;
-  top: 120px;
-  width: 267px;
-  height: 113px;
+.card-text p {  
+  height: 250px;
+  padding: 20px 0px;
   font-weight: 400px;
   font-size: 16px;
   line-height: 19px;
@@ -167,3 +164,31 @@ footer:first-letter {
 footer span{
     text-transform: uppercase;
 }
+
+/* Responsive */
+/*
+@media screen and (max-width: 768px) { /* esto es para tablets*
+  .class{
+    flex-direction: column;
+  }
+
+  .class{
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 480px) { /* esto es para celu*
+  html{
+    font-size: 20px;
+  }
+  //siempre hay que usar la opción de menú hamburguesa para los nav cuando disminuís sa celular
+  .class{
+    flex-direction: column;
+  }
+
+  .class{
+    width: unset;
+    margin-bottom: 1.2rem;
+  }
+}
+*/
