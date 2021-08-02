@@ -8,14 +8,13 @@
   box-sizing: border-box;
 }
 
-header, main, footer{
-  max-width: 1024px;
-}
-
 body {
   font-family: "Roboto", sans-serif;
-  margin: 40px auto;
-  width: 70%;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
 }
 
 ul,
@@ -38,7 +37,7 @@ a {
   text-transform: capitalize;
   display: flex;
   justify-content: flex-start;
-  padding: 5px;
+  padding: 10px;
 }
 
 header {
@@ -48,69 +47,87 @@ header {
   font-weight: 400;
   font-size: 40px;
   color: #000000;
-  text-transform: capitalize;  
+  text-transform: capitalize;
   box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
   display: flex;
+  padding: 10px 50px;
 }
 
 /* Estilos cards */
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 150px 0;
 }
 
 .card {
-  width: 100%;
+  width: 23%;
   height: 529px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
 }
 
-.card-img {  
+.card-img {
   position: relative;
-  background: url("../img/back_batman.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 16px 16px;
-  height: 229px;
+  border-radius: 16px 16px 0px 0px;
+  height: 193px;
   display: flex;
 }
 
-.card-img img{
-    position: absolute;
-    top: 6.25%;
-    left: 20px;
+.back-batman {
+  background: url("../img/back_batman.svg") no-repeat;
+  background-size: cover;
+}
+
+.back-mujerM {
+  background: url("../img/back_mujerMaravilla.svg") no-repeat;
+  background-size: cover;
+}
+
+.back-super {
+  background: url("../img/back_superman.svg") no-repeat;
+  background-size: cover;
+}
+
+.back-harley {
+  background: url("../img/back_harley.svg") no-repeat;
+  background-size: cover;
+}
+
+.card-img img {
+  position: absolute;
+  top: 6.25%;
+  left: 20px;
 }
 
 .card-text {
-  position: relative;  
-  height: 236px;
+  position: relative;
   margin-bottom: 30px;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-text img {
   position: absolute;
   left: calc(50% - 59px);
   top: -59px;
-    border-radius: 50%;
-    background: #C4C4C4;
+  border-radius: 50%;
+  background: #c4c4c4;
 }
 
 .card-text h2 {
   padding-top: 60px;
-  text-align: center;  
+  text-align: center;
   font-size: 30px;
   line-height: 35px;
   color: #000000;
   text-transform: uppercase;
 }
 
-.card-text p {  
+.card-text p {
   height: 250px;
   padding: 20px 0px;
   font-weight: 400px;
@@ -120,63 +137,68 @@ header {
 }
 
 .card-text p:first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-.card-button{    
-width: 128.78px;
-height: 48.52px;
-left: 117px;
-background: #00669F;
-text-align: center;
+.card-button {
+  width: 128.78px;
+  height: 48.52px;
+  left: 117px;
+  background: #00669f;
+  text-align: center;
 }
 
-.card-button a{
-    width: 56px;
-height: 18px;
+.card-button a {
+  width: 56px;
+  height: 18px;
   font-weight: 400px;
   font-size: 15px;
-  line-height: 17,58px;
-  color: #F3F3F3;
+  line-height: 17, 58px;
+  color: #f3f3f3;
 }
 
 .card-button a:first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 /* Footer */
 footer {
   background-color: #00669f;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   color: #fff9f9;
-  font-weight: 400px;
   font-size: 16px;
-  line-height: 18, 75px;
-  height: 51px;
-  left: 0px;
-  top: 972px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer h2{
+  padding-right: 30px;
+  font-size: 30px;
 }
 
 footer:first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-footer span{
-    text-transform: uppercase;
+footer span {
+  text-transform: uppercase;
 }
 
 /* Responsive */
-/*
-@media screen and (max-width: 768px) { /* esto es para tablets*
-  .class{
+
+@media screen and (max-width: 768px) { /* esto es para tablets*/
+  .container{
     flex-direction: column;
   }
 
-  .class{
+  .card{
     width: unset;
   }
 }
 
+/*
 @media screen and (max-width: 480px) { /* esto es para celu*
   html{
     font-size: 20px;
