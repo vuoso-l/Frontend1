@@ -49,7 +49,7 @@ a {
 
 .primerHeader,
 .tercerFooter {
-  padding: 2px 30px;
+  padding: 5px 30px;
   background-color: #222222;
 }
 
@@ -108,6 +108,12 @@ header {
 }
 
 /* Main*/
+.banner{
+  background: url("../img/Slide.svg") no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
 .segundoSection {
   display: flex;
   flex-wrap: wrap;
