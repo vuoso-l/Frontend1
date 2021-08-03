@@ -28,13 +28,16 @@ a {
   text-decoration: none;
 }
 
+h1:first-letter, h2:first-letter, p:first-letter {
+  text-transform: uppercase;
+}
+
 /* Header */
 .info {
   background-color: #1cd1b0;
   color: #000000;
   font-size: 15px;
   font-weight: 400;
-  text-transform: capitalize;
   display: flex;
   justify-content: flex-start;
   padding: 10px;
@@ -189,10 +192,17 @@ footer span {
 /* Responsive */
 
 @media screen and (max-width: 768px) { /* esto es para tablets*/
+  header{
+    font-size: 48px;
+    font-weight: 400;
+  }
+  header{
+    font-size: 72px;
+    font-weight: 400;
+  }
   .container{
     flex-direction: column;
   }
-
   .card{
     width: unset;
   }
