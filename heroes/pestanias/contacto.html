@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/globalStyle.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <div class="info">
+        <p>descuentos del 20%</p>
+    </div>
+    <header>
+        <h1>cards súper héroes</h1>        
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="./registro.html">registrarme</a></li>
+            <li><a href="./login.html">ingresar</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="containerContacto">
+            <h2>contacto</h2>
+            <form action="" method="post">
+                <input
+                  type="text"
+                  name="nombreYApellido"
+                  id="nombreYApellido"
+                  placeholder="Nombre y Apellido"
+                  minlength="5"
+                  maxlength="30"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Correo electrónico"
+                />
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>                
+                <input type="reset" value="Resetear" />
+                <input type="submit" value="Registrar" />
+              </form>
+        </div>
+    </main>
+    <footer>
+        <div class="invisible"></div>
+        <p>todos los derechos reservados a <span>front end</span> 1</p>
+        <h2>github</h2>
+    </footer>
+</body>
+</html>
