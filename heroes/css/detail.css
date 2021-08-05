@@ -1,0 +1,63 @@
+body {
+  background: url("../img/backDetailHarley.png") no-repeat;
+  background-size: cover;
+}
+
+.containerDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #f3f3f3;
+  border-radius: 45px 45px 0px 0px;
+  text-align: left;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.card-text .img-perfil {
+  position: absolute;
+  left: calc(50% - 59px);
+  top: -59px;
+  border-radius: 50%;
+  background: #c4c4c4;
+}
+
+.card-text .corazon{    
+        position: absolute;
+        top: 9.25%;
+        left: 20px;      
+}
+
+.card-text h3 {
+  color: #2c0187;
+  padding: 50px 0px 10px;
+  text-decoration: underline;
+}
+
+.card-text p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.containerDetail>div>div>img{
+    padding: 0px 5px;
+}
+
+.containerDetail a {
+  background: #2c0187;
+  border-radius: 0px 0px 45px 45px;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  max-width: 50%;
+}

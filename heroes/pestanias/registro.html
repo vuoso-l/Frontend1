@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/globalStyle.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/pestanias.css" />
   </head>
   <body>
     <div class="info">
@@ -24,10 +25,11 @@
       </ul>
     </nav>
     <main>
-      <div class="containerRegistro">
+      <div class="containerPestania">
         <h2>registro</h2>
         <form action="" method="post">
           <input
+            class="inputGeneral"
             type="text"
             name="nombreYApellido"
             id="nombreYApellido"
@@ -36,24 +38,28 @@
             maxlength="30"
           />
           <input
+            class="inputGeneral"
             type="email"
             name="email"
             id="email"
             placeholder="Correo electrónico"
           />
           <input
+            class="inputGeneral"
             type="password"
             name="password"
             id="password"
             placeholder="Contraseña"
-          />        
-          <select name="pais">
+          />
+          <select class="inputGeneral" name="pais">
             <option value="argentina">Argentina</option>
             <option value="colombia">Colombia</option>
             <option value="brasil">Brasil</option>
           </select>
-          <input type="reset" value="Resetear" />
-          <input type="submit" value="Registrar" />
+          <div>
+            <input class="btn btn-reset" type="reset" value="Resetear" />
+            <input class="btn btn-registro" type="submit" value="Registrar" />
+          </div>
         </form>
         <a href="./login.html">¿Ya tenés una cuenta?<span>ingresá</span></a>
       </div>

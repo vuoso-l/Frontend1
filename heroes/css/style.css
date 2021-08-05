@@ -1,4 +1,3 @@
-
 /* Estilos cards */
 .container {
   display: flex;
@@ -109,19 +108,20 @@
 
 /* Responsive */
 
-@media screen and (max-width: 768px) { /* esto es para tablets*/
-  header{
+@media screen and (max-width: 768px) {
+  /* esto es para tablets*/
+  header {
     font-size: 48px;
     font-weight: 400;
   }
-  header{
+  header {
     font-size: 72px;
     font-weight: 400;
   }
-  .container{
+  .container {
     flex-direction: column;
   }
-  .card{
+  .card {
     width: unset;
   }
 }

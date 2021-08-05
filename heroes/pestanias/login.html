@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ingreso</title>
-    <link rel="stylesheet" href="../css/globalStyle.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/globalStyle.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/pestanias.css" />
+  </head>
+  <body>
     <div class="info">
-        <p>descuentos del 20%</p>
+      <p>descuentos del 20%</p>
     </div>
     <header>
-        <h1>cards súper héroes</h1>        
+      <h1>cards súper héroes</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="../index.html">home</a></li>
-            <li><a href="./contacto.html">contacto</a></li>
-            <li><a href="./registro.html">registrarme</a></li>
-        </ul>
+      <ul>
+        <li><a href="../index.html">home</a></li>
+        <li><a href="./contacto.html">contacto</a></li>
+        <li><a href="./registro.html">registrarme</a></li>
+      </ul>
     </nav>
     <main>
-        <div class="containerLogin">
-            <h2>login</h2>
-            <form action="" method="post">
-                <input type="text" name="usuario" id="usuario" placeholder="Usuario" minlength="5" maxlength="15">
-                <input type="password" name="password" id="password" placeholder="Contraseña">
-                <input type="submit" value="Entrar">
-            </form>
-            <a href="./registro.html">¿No tienes una cuenta?<span>registrarme</span></a>
-        </div>
+      <div class="containerPestania">
+        <h2>login</h2>
+        <form action="" method="post">
+          <input
+            class="inputGeneral"
+            type="text"
+            name="usuario"
+            id="usuario"
+            placeholder="Usuario"
+            minlength="5"
+            maxlength="15"
+          />
+          <input
+            class="inputGeneral"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Contraseña"
+          />
+          <input class="btn btn-login" type="submit" value="Entrar" />
+        </form>
+        <a href="./registro.html"
+          >¿No tienes una cuenta?<span>registrarme</span></a
+        >
+      </div>
     </main>
     <footer>
-        <div class="invisible"></div>
-        <p>todos los derechos reservados a <span>front end</span> 1</p>
-        <h2>github</h2>
+      <div class="invisible"></div>
+      <p>todos los derechos reservados a <span>front end</span> 1</p>
+      <h2>github</h2>
     </footer>
-</body>
+  </body>
 </html>
