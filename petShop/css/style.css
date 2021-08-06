@@ -86,6 +86,14 @@ header {
   padding-right: 5px;
 }
 
+nav ul li::before { 
+  content:"\f1b0";
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  color: #fff;
+  margin-left: 5px;
+}
+
 .segundoHeader nav ul li a {
   font-size: 13px;
   line-height: 15px;
@@ -97,7 +105,6 @@ header {
 .icono-menu {
   color: white;
   display: none;
-  /* visibility: hidden;*/
 }
 
 /* Main*/
@@ -212,6 +219,7 @@ h3 {
   font-size: 9px;
   line-height: 11px;
   margin-top: 5px;
+  outline: none;
 }
 
 .tercerSection form div {
