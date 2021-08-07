@@ -1,5 +1,7 @@
 /* Importo fuente desde fonts google*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+
 
 /* Estilos Generales */
 * {
