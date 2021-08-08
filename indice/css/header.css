@@ -1,0 +1,15 @@
+/* Header*/
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  
+  .icono-menu {
+    color: black;
+    display: block;
+  }
+  
