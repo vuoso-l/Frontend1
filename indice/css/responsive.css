@@ -38,14 +38,7 @@
     .card {
       width: 40%;
       margin: 10px;
-    }
-    footer a::after {
-      content: "\f08c";
-      font-family: "Font Awesome 5 Free";
-      font-weight: 400;
-      color: blue;
-      padding: 5px;
-    }
+    }    
   }
   
   @media (min-width: 1024px) {

@@ -1,4 +1,12 @@
 /* Footer */
-footer a{
-    padding: 10px;
-  }
+footer a {
+  padding: 10px;
+}
+
+footer a::after {
+  content: "\f08c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  color: blue;
+  padding: 5px;
+}
