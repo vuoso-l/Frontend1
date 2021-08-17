@@ -1,15 +1,33 @@
 /* Header*/
-h1{
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  
-  nav ul {
-    display: none;
-  }
-  
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.menu {
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+/*
   .icono-menu {
     color: black;
     display: block;
-  }
-  
+  }*/
+label {
+  display: block;
+  cursor: pointer;
+}
+.menu a {
+  display: block;
+  border-bottom: 1px solid #eaeaeb;
+  margin: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#toggle:checked + .menu {
+  display: block;
+}

@@ -3,10 +3,17 @@ footer a {
   padding: 10px;
 }
 
-footer a::after {
+.redSocial1::after {
   content: "\f08c";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Brands";
   font-weight: 400;
-  color: blue;
+  color: #0000ffc9;
+  padding: 5px;
+}
+
+.redSocial2::after {
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
   padding: 5px;
 }
