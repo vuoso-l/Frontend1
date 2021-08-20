@@ -1,26 +1,48 @@
-main{
-    .container{
-        margin: 40px auto;
-        width: 70%;
-        margin-bottom: 150px;
-        h2{
-            color: $subtitulo;
+main {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 0px;
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 20px;
+      width: 100%;
+      h2 {
+        color: $subtitulo;
         text-transform: uppercase;
         background-color: $colorPrincipalFondos;
         letter-spacing: 10px;
-        word-spacing: 10px;    
+        word-spacing: 10px;
+        width: 100%;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        li {
+          padding: 5px 0;
+          span {
+            font-style: italic;
+          }
         }
-        ul{
-            li{
-                span{
-                    font-style: italic;
-                }
-            }
+      }
+      dl {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        dt {
+          padding: 5px 0;
+          span {
+            font-style: italic;
+          }
         }
+        dd {
+          padding: 5px 0;
+        }
+      }
     }
-    
-    
-    
-    
-
+  }
 }

@@ -1,11 +1,18 @@
 header {
   background-color: #e6e6e6;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  img{
+    padding-bottom: 10px;
+  }
   h1 {
     color: $titulo;
     text-transform: uppercase;
     background-color: $colorPrincipalFondos;
     letter-spacing: 10px;
     word-spacing: 10px;
+    padding: 10px;
   }
 }
