@@ -5,6 +5,18 @@
   padding: 10rem 0;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+}
+
+.agregarHeroe {
+  color: #ffffff;
+  font-size: 35px;
+  text-align: center;
+  background-color: #00669f;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
 }
 
 .card {
@@ -113,12 +125,16 @@
 @media screen and (max-width: 768px) {
   /* esto es para tablets*/
   h1 {
-    font-size: 40px;    
+    font-size: 40px;
   }
-  
+
   .container {
     flex-wrap: wrap;
     padding: 3rem 0;
+  }
+  .agregarHeroe{
+    right: 0;
+    top: calc(50% - 42px);
   }
   .card {
     max-width: 45%;
@@ -126,17 +142,21 @@
   }
 }
 
-@media screen and (max-width: 480px) { /* esto es para celu */
-  html{
+@media screen and (max-width: 480px) {
+  /* esto es para celu */
+  html {
     font-size: 20px;
   }
   /* siempre hay que usar la opción de menú hamburguesa para los nav cuando disminuís sa celular */
-  .container{
+  .container {
     flex-direction: column;
     align-items: center;
   }
-
-  .card{
+  .agregarHeroe{
+    right: 20px;
+    top: calc(25% - 21px);
+  }
+  .card {
     width: unset;
   }
 }
