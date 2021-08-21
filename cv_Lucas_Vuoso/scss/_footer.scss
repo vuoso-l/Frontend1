@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #005677;
+  padding: 5px 0;
+  a {
+    font-family: $letraPrincipal;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .redSocial1::after {
+    content: "\f08c";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    color: white;
+    padding: 5px;
+  }
+
+  .redSocial2::after {
+    content: "\f09b";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    padding: 5px;
+  }
+}

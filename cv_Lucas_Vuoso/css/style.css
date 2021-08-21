@@ -1,44 +1,163 @@
-/* importo la fuente de texto desde fonts google*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap');
-
-/* Estilos generales*/
-body{
-    /* utilizo font google en todo el documento*/
-    font-family: 'Inter', sans-serif;
-    background-color:aliceblue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Links en color negro y sin subrayado*/
-a{
-    color: black;
-    text-decoration: none;
+img {
+  max-width: 100%;
 }
 
-h1{
-    color: black;
-    font-weight: 900;
-    text-align: center;
+a {
+  display: inline-block;
+  text-decoration: none;
 }
 
-h2{
-    font-size: 30px;
-    font-weight: 700;
+h1:first-letter,
+h2:first-letter,
+h3::first-letter,
+p:first-letter {
+  text-transform: uppercase;
 }
 
-h3{
-    font-style: italic;
+span {
+  font-weight: bold;
 }
 
-.banner{
-    /*atajo de creación de background*/
-    background: rgb(190, 245, 179) url("../img/IMG_20210325_103544343.jpg") no-repeat;
-    background-size: cover;    
-    height: 200px;
-    position: relative;
+header {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0;
 }
 
-/* Footer */
-footer{
-    background-color: #ccc;
-    text-align: center;
+header .fotoPerfil {
+  width: 15%;
+  height: 100px;
+  background: burlywood url("../img/fotoLucasCorta1.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  color: #005677;
+  text-transform: uppercase;
+  background-color: #c4c4c4;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: darkblue;
+  padding: 10px;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px 0px;
+}
+
+main .container section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  width: 100%;
+}
+
+main .container section h2 {
+  color: #005677;
+  text-transform: uppercase;
+  background-color: #c4c4c4;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+main .container section ul {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+main .container section ul li {
+  padding: 5px 0;
+}
+
+main .container section ul li span {
+  font-style: italic;
+}
+
+main .container section dl {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+main .container section dl dt {
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+main .container section dl dd {
+  padding: 5px 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #005677;
+  padding: 5px 0;
+}
+
+footer a {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 10px;
+}
+
+footer .redSocial1::after {
+  content: "\f08c";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  padding: 5px;
+}
+
+footer .redSocial2::after {
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  padding: 5px;
 }

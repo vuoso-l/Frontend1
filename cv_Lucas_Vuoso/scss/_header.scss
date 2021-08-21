@@ -1,0 +1,41 @@
+header {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0;
+  .fotoPerfil {
+    width: 15%;
+    height: 100px;
+    background: burlywood url("../img/fotoLucasCorta1.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  h1 {
+    color: $titulo;
+    text-transform: uppercase;
+    background-color: $colorPrincipalFondos;
+    font-family: $letraPrincipal;
+    font-weight: $weightTitulos;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  nav{
+    ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li{
+        list-style-type: none;
+        a{
+          color: darkblue;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
