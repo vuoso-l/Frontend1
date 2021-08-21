@@ -3,16 +3,20 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
-  img{
+  padding: 20px 0 0;
+  img {
     padding-bottom: 10px;
   }
   h1 {
     color: $titulo;
     text-transform: uppercase;
     background-color: $colorPrincipalFondos;
+    font-family: $letraPrincipal;
+    font-weight: $weightTitulos;
     letter-spacing: 10px;
     word-spacing: 10px;
+    width: 100%;
+    text-align: center;
     padding: 10px;
   }
 }

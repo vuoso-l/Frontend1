@@ -14,14 +14,19 @@ main {
         color: $subtitulo;
         text-transform: uppercase;
         background-color: $colorPrincipalFondos;
+        font-family: $letraPrincipal;
+        font-weight: $weightTitulos;
         letter-spacing: 10px;
         word-spacing: 10px;
         width: 100%;
+        padding-left: 10px;
       }
       ul {
         display: flex;
         flex-direction: column;
         padding: 20px 40px;
+        font-family: $letraPrincipal;
+        font-weight: $weightOtrosTextos;
         li {
           padding: 5px 0;
           span {
@@ -33,6 +38,8 @@ main {
         display: flex;
         flex-direction: column;
         padding: 20px 40px;
+        font-family: $letraPrincipal;
+        font-weight: $weightOtrosTextos;
         dt {
           padding: 5px 0;
           span {
