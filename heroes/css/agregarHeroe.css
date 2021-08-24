@@ -1,0 +1,91 @@
+main {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.containerAgregarSuper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 70px;
+  background-color: #00669f;
+  border-radius: 20px;
+}
+
+h2,
+button {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;  
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 20px;
+}
+
+.form1,
+.form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  align-self: flex-start;
+  padding: 10px 0;
+}
+
+input, textarea, select{
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+}
+
+textarea{
+  resize: none;
+  margin-top: 20px;
+}
+
+label[for="poderes"], label[for="personaje"]{
+  font-size: 16px;
+  padding: 1px 0;
+}
+
+input[type = "checkbox"], input[type = "radio"]{
+  width: auto;
+  padding-right: 10px;
+}
+
+hr{
+  width: 100%;
+  margin: 15px;
+}
+
+button {
+  padding: 10px 100px;
+  background-color: #1cd1b0;
+  border-radius: 20px;
+  color: black;
+}
