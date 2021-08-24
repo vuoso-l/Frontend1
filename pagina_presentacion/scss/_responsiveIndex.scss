@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+  header {
+    flex-direction: column;
+    h1 {
+      font-size: 50px;
+      padding: 20px 0px;
+    }
+    nav {
+      #toggle:checked {
+        display: none;
+      }
+      label {
+        display: none;
+      }
+      div {
+        display: flex;
+        font-size: 20px;
+        a {
+          padding: 0px 5px;
+        }
+        a::before {
+          content: "\f0a4";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: blue;
+          padding: 5px;
+        }
+      }
+    }
+  }
+  main {
+    div {
+      width: 80%;
+      margin: auto;
+      .descripcion {
+        div {
+          background-size: cover;
+          height: 150px;
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+  }
+}

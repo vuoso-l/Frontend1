@@ -1,0 +1,225 @@
+/* Main*/
+main{
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Card petshop */
+    div{
+      width: 70%;
+      height: 300px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 20px 0px;
+      background: url("../img/pawprint\ 1.svg") no-repeat center;
+      background-size: contain;
+      .card div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2{
+          background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        }
+        a {
+        background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        }
+      }
+    }
+    /* Card súper héroes */
+    div{
+      width: 70%;
+      height: 300px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 20px 0px;
+      background: url("../img/liga-justicia-batman.svg") no-repeat center;
+      background-size: contain;
+      .card div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2{
+          background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        }
+        a {
+        background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        }
+      }
+    }
+    /* Card cv Lucas */
+    div{
+      width: 70%;
+      height: 300px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 20px 0px;
+      background: url("../img/Foto_perfil.jpg") no-repeat center;
+      background-size: contain;
+      .card div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2{
+          background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        }
+        a {
+        background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        }
+      }
+    }
+    /* Card cv Batman */
+    div{
+      width: 70%;
+      height: 300px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 20px 0px;
+      background: url("../img/logo_batman.svg") no-repeat center;
+      background-size: contain;
+      .card div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2{
+          background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        }
+        a {
+        background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        }
+      }
+    }
+    /* Card Lemon Pie */
+    div{
+      width: 70%;
+      height: 300px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 20px 0px;
+      background: url("../img/lemon-pie-1.svg") no-repeat center;
+      background-size: contain;
+      .card div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2{
+          background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        }
+        a {
+        background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        }
+      }
+    }
+    /* Card Pizzería */
+    div{
+      width: 70%;
+      height: 300px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 20px 0px;
+      background: url("../img/VectorPizza.svg") no-repeat center;
+      background-size: contain;
+      .card div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2{
+          background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        }
+        a {
+        background-color: antiquewhite;
+        border-radius: 5px;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        }
+      }
+    }
+  }
+}
+ 
