@@ -1,8 +1,41 @@
 @charset "UTF-8";
 /* flex gral */
-/* subtitulos y ancor Proyectos */
-/* Importo fuente desde fonts google*/
+/* subtitulos y ancor Proyectos
+$background-color: antiquewhite;
+$border-radius: 5px;
+$margin: 5px 0px;
+$padding: 5px 10px;
+$text-align: center;
+$color: black;
+
+@mixin subtitulosProyectosYAncor(
+  $background-color,
+  $border-radius,
+  $margin,
+  $padding,
+  $text-align,
+  $color
+) {
+  background-color: $background-color;
+  border-radius: $border-radius;
+  margin: $margin;
+  padding: $padding;
+  text-align: $text-align;
+  color: $color;
+}
+*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+main .containerProyectos .backPetshop h2, main .containerProyectos .backPetshop a, main .containerProyectos .backHeroes h2, main .containerProyectos .backHeroes a, main .containerProyectos .backCvLucas h2, main .containerProyectos .backCvLucas a, main .containerProyectos .backCvBatman h2, main .containerProyectos .backCvBatman a, main .containerProyectos .backLemonPie h2, main .containerProyectos .backLemonPie a, main .containerProyectos .backPizzeria h2, main .containerProyectos .backPizzeria a {
+  background-color: aliceblue;
+  box-shadow: 2px 2px 2px;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Importo fuente desde fonts google*/
 /* Estilos Generales */
 * {
   margin: 0;
@@ -77,72 +110,7 @@ nav div a {
   margin: 0;
 }
 
-/* Main
-main {
-  .containerProyectos {
-    @include flex(flex, column, center);
-    
-      width: 70%;
-      height: 300px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      @include flex(flex, column, center);
-      justify-content: flex-end;
-      margin: 20px 0px;
-      .backPetshop {
-        /* Card petshop
-        background: url("../img/pawprint\ 1.svg") no-repeat center;
-        background-size: contain;
-      }
-      .backHeroes {
-        /* Card súper héroes
-        background: url("../img/liga-justicia-batman.svg") no-repeat center;
-        background-size: contain;
-      }
-      .backCvLucas {
-        /* Card cv Lucas
-        background: url("../img/Foto_perfil.jpg") no-repeat center;
-        background-size: contain;
-      }
-      .backCvBatman {
-        /* Card cv Batman 
-        background: url("../img/logo_batman.svg") no-repeat center;
-        background-size: contain;
-      }
-      .backLemonPie {
-        /* Card Lemon Pie 
-        background: url("../img/lemon-pie-1.svg") no-repeat center;
-        background-size: contain;
-      }
-      .backPizzeria {
-        /* Card Pizzería 
-        background: url("../img/VectorPizza.svg") no-repeat center;
-        background-size: contain;
-      }
-      div {
-        @include flex(flex, column, center);
-        h2 {
-          background-color: antiquewhite;
-          border-radius: 5px;
-          margin: 5px 0px;
-          padding: 5px 10px;
-          text-align: center;
-          color: black;
-        }
-        a {
-          background-color: antiquewhite;
-          border-radius: 5px;
-          margin: 5px 0px;
-          padding: 5px 10px;
-          text-align: center;
-          color: black;
-          font-size: 18px;
-        }
-      }
-    
-  }
-}
-*/
+/* Main */
 main .containerProyectos {
   display: flex;
   flex-direction: column;
@@ -153,9 +121,9 @@ main .containerProyectos .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 70%;
-  height: 300px;
+  height: 400px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   margin: 20px 0px;
@@ -167,28 +135,23 @@ main .containerProyectos .backPetshop {
   background-size: contain;
 }
 
-main .containerProyectos .backPetshop div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main .containerProyectos .backPetshop h2 {
+  animation: movimiento 3s infinite;
 }
 
-main .containerProyectos .backPetshop div h2 {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
 }
 
-main .containerProyectos .backPetshop div a {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+main .containerProyectos .backPetshop a:hover {
+  padding: 7.5px 15px;
+  font-size: 1.5rem;
+  color: green;
 }
 
 main .containerProyectos .backHeroes {
@@ -197,58 +160,48 @@ main .containerProyectos .backHeroes {
   background-size: contain;
 }
 
-main .containerProyectos .backHeroes div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main .containerProyectos .backHeroes h2 {
+  animation: movimiento 3s infinite;
 }
 
-main .containerProyectos .backHeroes div h2 {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
 }
 
-main .containerProyectos .backHeroes div a {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+main .containerProyectos .backHeroes a:hover {
+  padding: 7.5px 15px;
+  font-size: 1.5rem;
+  color: green;
 }
 
 main .containerProyectos .backCvLucas {
   /* Card cv Lucas */
-  background: url("../img/Foto_perfil.jpg") no-repeat center;
+  background: url("../img/fotoLucasCorta1.jpg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backCvLucas div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main .containerProyectos .backCvLucas h2 {
+  animation: movimiento 3s infinite;
 }
 
-main .containerProyectos .backCvLucas div h2 {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
 }
 
-main .containerProyectos .backCvLucas div a {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+main .containerProyectos .backCvLucas a:hover {
+  padding: 7.5px 15px;
+  font-size: 1.5rem;
+  color: green;
 }
 
 main .containerProyectos .backCvBatman {
@@ -257,28 +210,23 @@ main .containerProyectos .backCvBatman {
   background-size: contain;
 }
 
-main .containerProyectos .backCvBatman div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main .containerProyectos .backCvBatman h2 {
+  animation: movimiento 3s infinite;
 }
 
-main .containerProyectos .backCvBatman div h2 {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
 }
 
-main .containerProyectos .backCvBatman div a {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+main .containerProyectos .backCvBatman a:hover {
+  padding: 7.5px 15px;
+  font-size: 1.5rem;
+  color: green;
 }
 
 main .containerProyectos .backLemonPie {
@@ -287,28 +235,23 @@ main .containerProyectos .backLemonPie {
   background-size: contain;
 }
 
-main .containerProyectos .backLemonPie div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main .containerProyectos .backLemonPie h2 {
+  animation: movimiento 3s infinite;
 }
 
-main .containerProyectos .backLemonPie div h2 {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
 }
 
-main .containerProyectos .backLemonPie div a {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+main .containerProyectos .backLemonPie a:hover {
+  padding: 7.5px 15px;
+  font-size: 1.5rem;
+  color: green;
 }
 
 main .containerProyectos .backPizzeria {
@@ -317,28 +260,23 @@ main .containerProyectos .backPizzeria {
   background-size: contain;
 }
 
-main .containerProyectos .backPizzeria div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main .containerProyectos .backPizzeria h2 {
+  animation: movimiento 2s infinite;
 }
 
-main .containerProyectos .backPizzeria div h2 {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
 }
 
-main .containerProyectos .backPizzeria div a {
-  background-color: antiquewhite;
-  border-radius: 5px;
-  margin: 5px 0px;
-  padding: 5px 10px;
-  text-align: center;
-  color: black;
+main .containerProyectos .backPizzeria a:hover {
+  padding: 7.5px 15px;
+  font-size: 1.5rem;
+  color: green;
 }
 
 .containerIndex {
@@ -410,7 +348,7 @@ footer a {
   padding: 10px;
 }
 
-footer a .redSocial1::after {
+footer .redSocial1::after {
   content: "\f08c";
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
@@ -418,7 +356,7 @@ footer a .redSocial1::after {
   padding: 5px;
 }
 
-footer a .redSocial2::after {
+footer .redSocial2::after {
   content: "\f09b";
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;

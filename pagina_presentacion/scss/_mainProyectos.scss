@@ -1,78 +1,13 @@
-/* Main
-main {
-  .containerProyectos {
-    @include flex(flex, column, center);
-    
-      width: 70%;
-      height: 300px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      @include flex(flex, column, center);
-      justify-content: flex-end;
-      margin: 20px 0px;
-      .backPetshop {
-        /* Card petshop
-        background: url("../img/pawprint\ 1.svg") no-repeat center;
-        background-size: contain;
-      }
-      .backHeroes {
-        /* Card súper héroes
-        background: url("../img/liga-justicia-batman.svg") no-repeat center;
-        background-size: contain;
-      }
-      .backCvLucas {
-        /* Card cv Lucas
-        background: url("../img/Foto_perfil.jpg") no-repeat center;
-        background-size: contain;
-      }
-      .backCvBatman {
-        /* Card cv Batman 
-        background: url("../img/logo_batman.svg") no-repeat center;
-        background-size: contain;
-      }
-      .backLemonPie {
-        /* Card Lemon Pie 
-        background: url("../img/lemon-pie-1.svg") no-repeat center;
-        background-size: contain;
-      }
-      .backPizzeria {
-        /* Card Pizzería 
-        background: url("../img/VectorPizza.svg") no-repeat center;
-        background-size: contain;
-      }
-      div {
-        @include flex(flex, column, center);
-        h2 {
-          background-color: antiquewhite;
-          border-radius: 5px;
-          margin: 5px 0px;
-          padding: 5px 10px;
-          text-align: center;
-          color: black;
-        }
-        a {
-          background-color: antiquewhite;
-          border-radius: 5px;
-          margin: 5px 0px;
-          padding: 5px 10px;
-          text-align: center;
-          color: black;
-          font-size: 18px;
-        }
-      }
-    
-  }
-}
-*/
+/* Main */
 
 main {
   .containerProyectos {
     @include flex(flex, column, center);
     .card {
       @include flex(flex, column, center);
-      justify-content: flex-end;
+      justify-content: space-between;
       width: 70%;
-      height: 300px;
+      height: 400px;
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
       margin: 20px 0px;
@@ -81,13 +16,24 @@ main {
       /* Card petshop */
       background: url("../img/pawprint\ 1.svg") no-repeat center;
       background-size: contain;
-      div {
-        @include flex(flex, column, center);
-        h2 {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+      h2 {
+        @extend %subtYAncorProyectos;
+        animation: movimiento 3s infinite;
+      }
+      @keyframes movimiento {
+        from {
+          transform: scale(1);
         }
-        a {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+        to {
+          transform: scale(1.25);
+        }
+      }
+      a {
+        @extend %subtYAncorProyectos;
+        &:hover {
+          padding: 7.5px 15px;
+          font-size: 1.5rem;
+          color: green;
         }
       }
     }
@@ -95,41 +41,74 @@ main {
       /* Card súper héroes */
       background: url("../img/liga-justicia-batman.svg") no-repeat center;
       background-size: contain;
-      div {
-        @include flex(flex, column, center);
-        h2 {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+      h2 {
+        @extend %subtYAncorProyectos;
+        animation: movimiento 3s infinite;
+      }
+      @keyframes movimiento {
+        from {
+          transform: scale(1);
         }
-        a {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+        to {
+          transform: scale(1.25);
+        }
+      }
+      a {
+        @extend %subtYAncorProyectos;
+        &:hover {
+          padding: 7.5px 15px;
+          font-size: 1.5rem;
+          color: green;
         }
       }
     }
     .backCvLucas {
       /* Card cv Lucas */
-      background: url("../img/Foto_perfil.jpg") no-repeat center;
+      background: url("../img/fotoLucasCorta1.jpg") no-repeat center;
       background-size: contain;
-      div {
-        @include flex(flex, column, center);
-        h2 {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+      h2 {
+        @extend %subtYAncorProyectos;
+        animation: movimiento 3s infinite;
+      }
+      @keyframes movimiento {
+        from {
+          transform: scale(1);
         }
-        a {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+        to {
+          transform: scale(1.25);
+        }
+      }
+      a {
+        @extend %subtYAncorProyectos;
+        &:hover {
+          padding: 7.5px 15px;
+          font-size: 1.5rem;
+          color: green;
         }
       }
     }
     .backCvBatman {
-      /* Card cv Batman */ 
+      /* Card cv Batman */
       background: url("../img/logo_batman.svg") no-repeat center;
       background-size: contain;
-      div {
-        @include flex(flex, column, center);
-        h2 {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+      h2 {
+        @extend %subtYAncorProyectos;
+        animation: movimiento 3s infinite;
+      }
+      @keyframes movimiento {
+        from {
+          transform: scale(1);
         }
-        a {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+        to {
+          transform: scale(1.25);
+        }
+      }
+      a {
+        @extend %subtYAncorProyectos;
+        &:hover {
+          padding: 7.5px 15px;
+          font-size: 1.5rem;
+          color: green;
         }
       }
     }
@@ -137,13 +116,24 @@ main {
       /* Card Lemon Pie */
       background: url("../img/lemon-pie-1.svg") no-repeat center;
       background-size: contain;
-      div {
-        @include flex(flex, column, center);
-        h2 {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+      h2 {
+        @extend %subtYAncorProyectos;
+        animation: movimiento 3s infinite;
+      }
+      @keyframes movimiento {
+        from {
+          transform: scale(1);
         }
-        a {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+        to {
+          transform: scale(1.25);
+        }
+      }
+      a {
+        @extend %subtYAncorProyectos;
+        &:hover {
+          padding: 7.5px 15px;
+          font-size: 1.5rem;
+          color: green;
         }
       }
     }
@@ -151,13 +141,24 @@ main {
       /* Card Pizzería */
       background: url("../img/VectorPizza.svg") no-repeat center;
       background-size: contain;
-      div {
-        @include flex(flex, column, center);
-        h2 {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+      h2 {
+        @extend %subtYAncorProyectos;
+        animation: movimiento 2s infinite;
+      }
+      @keyframes movimiento {
+        from {
+          transform: scale(1);
         }
-        a {
-          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
+        to {
+          transform: scale(1.25);
+        }
+      }
+      a {
+        @extend %subtYAncorProyectos;
+        &:hover {
+          padding: 7.5px 15px;
+          font-size: 1.5rem;
+          color: green;
         }
       }
     }

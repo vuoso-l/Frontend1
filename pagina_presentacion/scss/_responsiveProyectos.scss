@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   main {
-    div {
+    .containerProyectos {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
@@ -9,15 +9,16 @@
         width: 40%;
         margin: 10px;
       }
-      .fotoPerfil {
-        background-size: cover;
-      }
     }
   }
 }
 
 @media (min-width: 1024px) {
-  .card {
-    width: 30%;
+  main{
+    .containerProyectos{
+      .card {
+        width: 30%;
+      }
+    }
   }
 }

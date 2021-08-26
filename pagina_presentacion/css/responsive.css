@@ -29,34 +29,37 @@
 }
 
 @media (min-width: 768px) {
-  main div {
+  main .containerIndex {
     width: 80%;
     margin: auto;
   }
-  main div .descripcion div {
+  main .containerIndex .descripcion .fotoPerfil {
+    height: 130px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .containerIndex .descripcion .fotoPerfil {
     background-size: cover;
     height: 150px;
   }
 }
 
 @media (min-width: 768px) {
-  main div {
+  main .containerProyectos {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding: 100px 0px;
   }
-  main div .card {
+  main .containerProyectos .card {
     width: 40%;
     margin: 10px;
-  }
-  main div .fotoPerfil {
-    background-size: cover;
   }
 }
 
 @media (min-width: 1024px) {
-  .card {
+  main .containerProyectos .card {
     width: 30%;
   }
 }
