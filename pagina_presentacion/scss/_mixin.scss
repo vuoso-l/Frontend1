@@ -1,0 +1,30 @@
+/* flex gral */
+@mixin flex($display, $flex-direction, $align-items) {
+  display: $display;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+}
+
+/* subtitulos y ancor Proyectos */
+$background-color: antiquewhite;
+$border-radius: 5px;
+$margin: 5px 0px;
+$padding: 5px 10px;
+$text-align: center;
+$color: black;
+
+@mixin subtitulosProyectosYAncor(
+  $background-color,
+  $border-radius,
+  $margin,
+  $padding,
+  $text-align,
+  $color
+) {
+  background-color: $background-color;
+  border-radius: $border-radius;
+  margin: $margin;
+  padding: $padding;
+  text-align: $text-align;
+  color: $color;
+}

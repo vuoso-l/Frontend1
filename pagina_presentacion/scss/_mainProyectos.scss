@@ -1,225 +1,165 @@
-/* Main*/
-main{
-  div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Card petshop */
-    div{
+/* Main
+main {
+  .containerProyectos {
+    @include flex(flex, column, center);
+    
       width: 70%;
       height: 300px;
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex(flex, column, center);
       justify-content: flex-end;
       margin: 20px 0px;
+      .backPetshop {
+        /* Card petshop
+        background: url("../img/pawprint\ 1.svg") no-repeat center;
+        background-size: contain;
+      }
+      .backHeroes {
+        /* Card súper héroes
+        background: url("../img/liga-justicia-batman.svg") no-repeat center;
+        background-size: contain;
+      }
+      .backCvLucas {
+        /* Card cv Lucas
+        background: url("../img/Foto_perfil.jpg") no-repeat center;
+        background-size: contain;
+      }
+      .backCvBatman {
+        /* Card cv Batman 
+        background: url("../img/logo_batman.svg") no-repeat center;
+        background-size: contain;
+      }
+      .backLemonPie {
+        /* Card Lemon Pie 
+        background: url("../img/lemon-pie-1.svg") no-repeat center;
+        background-size: contain;
+      }
+      .backPizzeria {
+        /* Card Pizzería 
+        background: url("../img/VectorPizza.svg") no-repeat center;
+        background-size: contain;
+      }
+      div {
+        @include flex(flex, column, center);
+        h2 {
+          background-color: antiquewhite;
+          border-radius: 5px;
+          margin: 5px 0px;
+          padding: 5px 10px;
+          text-align: center;
+          color: black;
+        }
+        a {
+          background-color: antiquewhite;
+          border-radius: 5px;
+          margin: 5px 0px;
+          padding: 5px 10px;
+          text-align: center;
+          color: black;
+          font-size: 18px;
+        }
+      }
+    
+  }
+}
+*/
+
+main {
+  .containerProyectos {
+    @include flex(flex, column, center);
+    .card {
+      @include flex(flex, column, center);
+      justify-content: flex-end;
+      width: 70%;
+      height: 300px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      margin: 20px 0px;
+    }
+    .backPetshop {
+      /* Card petshop */
       background: url("../img/pawprint\ 1.svg") no-repeat center;
       background-size: contain;
-      .card div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        h2{
-          background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
+      div {
+        @include flex(flex, column, center);
+        h2 {
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
         a {
-        background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
-        font-size: 18px;
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
       }
     }
-    /* Card súper héroes */
-    div{
-      width: 70%;
-      height: 300px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      margin: 20px 0px;
+    .backHeroes {
+      /* Card súper héroes */
       background: url("../img/liga-justicia-batman.svg") no-repeat center;
       background-size: contain;
-      .card div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        h2{
-          background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
+      div {
+        @include flex(flex, column, center);
+        h2 {
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
         a {
-        background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
-        font-size: 18px;
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
       }
     }
-    /* Card cv Lucas */
-    div{
-      width: 70%;
-      height: 300px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      margin: 20px 0px;
+    .backCvLucas {
+      /* Card cv Lucas */
       background: url("../img/Foto_perfil.jpg") no-repeat center;
       background-size: contain;
-      .card div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        h2{
-          background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
+      div {
+        @include flex(flex, column, center);
+        h2 {
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
         a {
-        background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
-        font-size: 18px;
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
       }
     }
-    /* Card cv Batman */
-    div{
-      width: 70%;
-      height: 300px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      margin: 20px 0px;
+    .backCvBatman {
+      /* Card cv Batman */ 
       background: url("../img/logo_batman.svg") no-repeat center;
       background-size: contain;
-      .card div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        h2{
-          background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
+      div {
+        @include flex(flex, column, center);
+        h2 {
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
         a {
-        background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
-        font-size: 18px;
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
       }
     }
-    /* Card Lemon Pie */
-    div{
-      width: 70%;
-      height: 300px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      margin: 20px 0px;
+    .backLemonPie {
+      /* Card Lemon Pie */
       background: url("../img/lemon-pie-1.svg") no-repeat center;
       background-size: contain;
-      .card div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        h2{
-          background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
+      div {
+        @include flex(flex, column, center);
+        h2 {
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
         a {
-        background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
-        font-size: 18px;
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
       }
     }
-    /* Card Pizzería */
-    div{
-      width: 70%;
-      height: 300px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      margin: 20px 0px;
+    .backPizzeria {
+      /* Card Pizzería */
       background: url("../img/VectorPizza.svg") no-repeat center;
       background-size: contain;
-      .card div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        h2{
-          background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
+      div {
+        @include flex(flex, column, center);
+        h2 {
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
         a {
-        background-color: antiquewhite;
-        border-radius: 5px;
-        margin: 5px 0px;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
-        font-size: 18px;
+          @include subtitulosProyectosYAncor($background-color, $border-radius, $margin, $padding, $text-align, $color);
         }
       }
     }
   }
 }
- 

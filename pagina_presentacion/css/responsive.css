@@ -1,0 +1,70 @@
+@media (min-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header h1 {
+    font-size: 50px;
+    padding: 20px 0px;
+  }
+  header nav #toggle:checked {
+    display: none;
+  }
+  header nav label {
+    display: none;
+  }
+  header nav div {
+    display: flex;
+    font-size: 20px;
+  }
+  header nav div a {
+    padding: 0px 5px;
+  }
+  header nav div a::before {
+    content: "\f0a4";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: blue;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  main div {
+    width: 80%;
+    margin: auto;
+  }
+  main div .descripcion div {
+    background-size: cover;
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  main div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0px;
+  }
+  main div .card {
+    width: 40%;
+    margin: 10px;
+  }
+  main div .fotoPerfil {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+  }
+}

@@ -1,4 +1,347 @@
-.container {
+@charset "UTF-8";
+/* flex gral */
+/* subtitulos y ancor Proyectos */
+/* Importo fuente desde fonts google*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  display: flex;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+h1:first-letter,
+h2:first-letter,
+h3::first-letter,
+p:first-letter {
+  text-transform: uppercase;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+  background-color: aliceblue;
+}
+
+/* Header*/
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav label {
+  display: block;
+  cursor: pointer;
+}
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+nav #toggle:checked + .menu {
+  display: block;
+}
+
+nav div {
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+nav div a {
+  display: block;
+  border-bottom: 1px solid #eaeaeb;
+  margin: 0;
+}
+
+/* Main
+main {
+  .containerProyectos {
+    @include flex(flex, column, center);
+    
+      width: 70%;
+      height: 300px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      @include flex(flex, column, center);
+      justify-content: flex-end;
+      margin: 20px 0px;
+      .backPetshop {
+        /* Card petshop
+        background: url("../img/pawprint\ 1.svg") no-repeat center;
+        background-size: contain;
+      }
+      .backHeroes {
+        /* Card súper héroes
+        background: url("../img/liga-justicia-batman.svg") no-repeat center;
+        background-size: contain;
+      }
+      .backCvLucas {
+        /* Card cv Lucas
+        background: url("../img/Foto_perfil.jpg") no-repeat center;
+        background-size: contain;
+      }
+      .backCvBatman {
+        /* Card cv Batman 
+        background: url("../img/logo_batman.svg") no-repeat center;
+        background-size: contain;
+      }
+      .backLemonPie {
+        /* Card Lemon Pie 
+        background: url("../img/lemon-pie-1.svg") no-repeat center;
+        background-size: contain;
+      }
+      .backPizzeria {
+        /* Card Pizzería 
+        background: url("../img/VectorPizza.svg") no-repeat center;
+        background-size: contain;
+      }
+      div {
+        @include flex(flex, column, center);
+        h2 {
+          background-color: antiquewhite;
+          border-radius: 5px;
+          margin: 5px 0px;
+          padding: 5px 10px;
+          text-align: center;
+          color: black;
+        }
+        a {
+          background-color: antiquewhite;
+          border-radius: 5px;
+          margin: 5px 0px;
+          padding: 5px 10px;
+          text-align: center;
+          color: black;
+          font-size: 18px;
+        }
+      }
+    
+  }
+}
+*/
+main .containerProyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .containerProyectos .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 70%;
+  height: 300px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin: 20px 0px;
+}
+
+main .containerProyectos .backPetshop {
+  /* Card petshop */
+  background: url("../img/pawprint 1.svg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backPetshop div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .containerProyectos .backPetshop div h2 {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backPetshop div a {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backHeroes {
+  /* Card súper héroes */
+  background: url("../img/liga-justicia-batman.svg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backHeroes div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .containerProyectos .backHeroes div h2 {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backHeroes div a {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backCvLucas {
+  /* Card cv Lucas */
+  background: url("../img/Foto_perfil.jpg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backCvLucas div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .containerProyectos .backCvLucas div h2 {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backCvLucas div a {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backCvBatman {
+  /* Card cv Batman */
+  background: url("../img/logo_batman.svg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backCvBatman div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .containerProyectos .backCvBatman div h2 {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backCvBatman div a {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backLemonPie {
+  /* Card Lemon Pie */
+  background: url("../img/lemon-pie-1.svg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backLemonPie div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .containerProyectos .backLemonPie div h2 {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backLemonPie div a {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backPizzeria {
+  /* Card Pizzería */
+  background: url("../img/VectorPizza.svg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backPizzeria div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .containerProyectos .backPizzeria div h2 {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .backPizzeria div a {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+.containerIndex {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,7 +349,8 @@
   padding: 50px 20px;
 }
 
-.descripcion {
+.containerIndex .descripcion {
+  /*section*/
   padding-bottom: 15px;
   display: flex;
   flex-direction: column;
@@ -14,12 +358,13 @@
   border-bottom: 2px solid black;
 }
 
-.descripcion h2 {
+.containerIndex .descripcion h2 {
   padding-bottom: 5%;
   align-self: flex-start;
 }
 
-.fotoPerfil {
+.containerIndex .descripcion .fotoPerfil {
+  /*div*/
   width: 30%;
   height: 100px;
   background: burlywood url("../img/fotoLucasCorta1.jpg") no-repeat;
@@ -28,31 +373,32 @@
   margin-bottom: 5%;
 }
 
-.descripcion p {
+.containerIndex .descripcion p {
   text-align: justify;
   width: 70%;
 }
 
-.cv {
+.containerIndex .cv {
+  /*div*/
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 3%;
 }
 
-section {
+.containerIndex .cv section {
   width: 100%;
   border-bottom: 1px solid;
   padding: 2% 0;
 }
 
-.cv section ul {
+.containerIndex .cv section ul {
   flex-direction: column;
   align-items: flex-start;
   padding: 2%;
 }
 
-.cv ul li::before {
+.containerIndex .cv section ul li::before {
   content: "\f0a4";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -60,44 +406,21 @@ section {
   padding: 5px;
 }
 
-/* Responsive*/
-@media (min-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-  h1 {
-    font-size: 50px;
-    padding: 20px 0px;
-  }
-  .menu,
-  footer {
-    display: flex;
-    font-size: 20px;
-  }
+footer a {
+  padding: 10px;
+}
 
-  .menu a {
-    padding: 0px 5px;
-  }
-  #toggle:checked + .menu,
-  label {
-    display: none;
-  }
-  .menu a::before {
-    content: "\f0a4";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: blue;
-    padding: 5px;
-  }
-  .container {
-    width: 80%;
-    margin: auto;
-  }
-  .fotoPerfil {
-    background-size: cover;
-    height: 150px;
-  }
-  footer {
-    justify-content: center;
-  }
+footer a .redSocial1::after {
+  content: "\f08c";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: #0000ffc9;
+  padding: 5px;
+}
+
+footer a .redSocial2::after {
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  padding: 5px;
 }
