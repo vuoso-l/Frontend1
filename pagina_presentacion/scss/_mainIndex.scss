@@ -29,6 +29,7 @@
     /*div*/
     @include flex(flex, column, center);
     padding-top: 3%;
+    width: 90%;
     section {
       width: 100%;
       border-bottom: 1px solid;

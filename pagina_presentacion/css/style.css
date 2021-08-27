@@ -322,6 +322,7 @@ main .containerProyectos .backPizzeria a:hover {
   flex-direction: column;
   align-items: center;
   padding-top: 3%;
+  width: 90%;
 }
 
 .containerIndex .cv section {
