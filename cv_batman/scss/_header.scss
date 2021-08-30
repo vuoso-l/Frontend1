@@ -1,8 +1,8 @@
 header {
+  @include flexbox;
+  @include flex-direction($direction: column);
+  @include align-items($value: center);
   background-color: #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px 0 0;
   img {
     padding-bottom: 10px;

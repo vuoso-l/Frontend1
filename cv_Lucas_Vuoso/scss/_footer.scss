@@ -1,7 +1,7 @@
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox;
+  @include flex-direction($direction: column);
+  @include align-items($value: center);
   background-color: #005677;
   padding: 5px 0;
   a {

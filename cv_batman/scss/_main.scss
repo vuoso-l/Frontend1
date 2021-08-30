@@ -1,13 +1,13 @@
 main {
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include flexbox;
+    @include flex-direction($direction: column);
+    @include align-items($value: flex-start);
     padding: 100px 0px;
     section {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      @include flexbox;
+      @include flex-direction($direction: column);
+      @include align-items($value: flex-start);
       padding-top: 20px;
       width: 100%;
       h2 {
@@ -22,8 +22,8 @@ main {
         padding-left: 10px;
       }
       ul {
-        display: flex;
-        flex-direction: column;
+        @include flexbox;
+        @include flex-direction($direction: column);
         padding: 20px 40px;
         font-family: $letraPrincipal;
         font-weight: $weightOtrosTextos;
@@ -35,8 +35,8 @@ main {
         }
       }
       dl {
-        display: flex;
-        flex-direction: column;
+        @include flexbox;
+        @include flex-direction($direction: column);
         padding: 20px 40px;
         font-family: $letraPrincipal;
         font-weight: $weightOtrosTextos;
