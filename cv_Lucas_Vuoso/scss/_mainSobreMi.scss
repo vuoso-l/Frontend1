@@ -1,0 +1,14 @@
+main {
+  .containerSobreMi {
+    padding: 150px 0;
+    section {
+      @include flexbox;
+      @include flex-direction($direction: column);
+      @include align-items($value: center);
+      p {
+        text-align: justify;
+        width: 50%;
+      }
+    }
+  }
+}

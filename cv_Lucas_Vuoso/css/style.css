@@ -129,6 +129,21 @@ main .container section dl dd {
   padding: 5px 0;
 }
 
+main .containerSobreMi {
+  padding: 150px 0;
+}
+
+main .containerSobreMi section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .containerSobreMi section p {
+  text-align: justify;
+  width: 50%;
+}
+
 footer {
   display: flex;
   justify-content: center;
