@@ -5,14 +5,12 @@ footer {
   .redSocial1::after {
     content: "\f08c";
     font-family: "Font Awesome 5 Brands";
-    font-weight: 400;
     color: #0000ffc9;
-    padding: 5px;
+    @extend %detallesRedSocial;
   }
   .redSocial2::after {
     content: "\f09b";
     font-family: "Font Awesome 5 Brands";
-    font-weight: 400;
-    padding: 5px;
+    @extend %detallesRedSocial;
   }
 }

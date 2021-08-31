@@ -1,11 +1,11 @@
-.containerIndex {
-  @include flex(flex, column, center);
+.containerIndex {  
+  @include flex(column, center);
   width: 100%;
   padding: 50px 20px;
   .descripcion {
     /*section*/
     padding-bottom: 15px;
-    @include flex(flex, column, center);
+    @include flex(column, center);
     border-bottom: 2px solid black;
     h2 {
       padding-bottom: 5%;
@@ -27,7 +27,7 @@
   }
   .cv {
     /*div*/
-    @include flex(flex, column, center);
+    @include flex(column, center);
     padding-top: 3%;
     width: 90%;
     section {

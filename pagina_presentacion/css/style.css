@@ -1,29 +1,4 @@
 @charset "UTF-8";
-/* flex gral */
-/* subtitulos y ancor Proyectos
-$background-color: antiquewhite;
-$border-radius: 5px;
-$margin: 5px 0px;
-$padding: 5px 10px;
-$text-align: center;
-$color: black;
-
-@mixin subtitulosProyectosYAncor(
-  $background-color,
-  $border-radius,
-  $margin,
-  $padding,
-  $text-align,
-  $color
-) {
-  background-color: $background-color;
-  border-radius: $border-radius;
-  margin: $margin;
-  padding: $padding;
-  text-align: $text-align;
-  color: $color;
-}
-*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
 main .containerProyectos .backPetshop h2, main .containerProyectos .backPetshop a, main .containerProyectos .backHeroes h2, main .containerProyectos .backHeroes a, main .containerProyectos .backCvLucas h2, main .containerProyectos .backCvLucas a, main .containerProyectos .backCvBatman h2, main .containerProyectos .backCvBatman a, main .containerProyectos .backLemonPie h2, main .containerProyectos .backLemonPie a, main .containerProyectos .backPizzeria h2, main .containerProyectos .backPizzeria a {
   background-color: aliceblue;
@@ -33,6 +8,11 @@ main .containerProyectos .backPetshop h2, main .containerProyectos .backPetshop 
   padding: 5px 10px;
   text-align: center;
   color: black;
+}
+
+footer .redSocial1::after, footer .redSocial2::after {
+  font-weight: 400;
+  padding: 5px;
 }
 
 /* Importo fuente desde fonts google*/
@@ -110,7 +90,6 @@ nav div a {
   margin: 0;
 }
 
-/* Main */
 main .containerProyectos {
   display: flex;
   flex-direction: column;
@@ -352,14 +331,10 @@ footer a {
 footer .redSocial1::after {
   content: "\f08c";
   font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
   color: #0000ffc9;
-  padding: 5px;
 }
 
 footer .redSocial2::after {
   content: "\f09b";
   font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
-  padding: 5px;
 }
