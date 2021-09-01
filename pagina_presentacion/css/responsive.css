@@ -22,7 +22,7 @@
   }
   header nav div a::before {
     content: "";
-    background: blue;
+    background: #4242d6;
     position: absolute;
     bottom: -10px;
     width: 0;

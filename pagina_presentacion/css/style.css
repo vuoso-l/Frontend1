@@ -10,6 +10,12 @@ main .containerProyectos .backPetshop h2, main .containerProyectos .backPetshop 
   color: black;
 }
 
+main .containerProyectos .backPetshop a:hover, main .containerProyectos .backHeroes a:hover, main .containerProyectos .backCvLucas a:hover, main .containerProyectos .backCvBatman a:hover, main .containerProyectos .backLemonPie a:hover, main .containerProyectos .backPizzeria a:hover {
+  padding: 7.5px 15px;
+  font-size: 1.5rem;
+  color: #4242d6;
+}
+
 footer .redSocial1::after, footer .redSocial2::after {
   font-weight: 400;
   padding: 5px;
@@ -35,7 +41,6 @@ img {
 ul,
 ol {
   list-style-type: none;
-  display: flex;
 }
 
 a {
@@ -110,7 +115,7 @@ main .containerProyectos .card {
 
 main .containerProyectos .backPetshop {
   /* Card petshop */
-  background: url("../img/pawprint 1.svg") no-repeat center;
+  background: #ebe2e2 url("../img/pawprint 1.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -127,15 +132,9 @@ main .containerProyectos .backPetshop h2 {
   }
 }
 
-main .containerProyectos .backPetshop a:hover {
-  padding: 7.5px 15px;
-  font-size: 1.5rem;
-  color: green;
-}
-
 main .containerProyectos .backHeroes {
   /* Card súper héroes */
-  background: url("../img/liga-justicia-batman.svg") no-repeat center;
+  background: #ebe2e2 url("../img/liga-justicia-batman.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -152,15 +151,9 @@ main .containerProyectos .backHeroes h2 {
   }
 }
 
-main .containerProyectos .backHeroes a:hover {
-  padding: 7.5px 15px;
-  font-size: 1.5rem;
-  color: green;
-}
-
 main .containerProyectos .backCvLucas {
   /* Card cv Lucas */
-  background: url("../img/fotoLucasCorta1.jpg") no-repeat center;
+  background: #ebe2e2 url("../img/fotoLucasCorta1.jpg") no-repeat center;
   background-size: contain;
 }
 
@@ -177,15 +170,9 @@ main .containerProyectos .backCvLucas h2 {
   }
 }
 
-main .containerProyectos .backCvLucas a:hover {
-  padding: 7.5px 15px;
-  font-size: 1.5rem;
-  color: green;
-}
-
 main .containerProyectos .backCvBatman {
   /* Card cv Batman */
-  background: url("../img/logo_batman.svg") no-repeat center;
+  background: #ebe2e2 url("../img/logo_batman.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -202,15 +189,9 @@ main .containerProyectos .backCvBatman h2 {
   }
 }
 
-main .containerProyectos .backCvBatman a:hover {
-  padding: 7.5px 15px;
-  font-size: 1.5rem;
-  color: green;
-}
-
 main .containerProyectos .backLemonPie {
   /* Card Lemon Pie */
-  background: url("../img/lemon-pie-1.svg") no-repeat center;
+  background: #ebe2e2 url("../img/lemon-pie-1.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -227,15 +208,9 @@ main .containerProyectos .backLemonPie h2 {
   }
 }
 
-main .containerProyectos .backLemonPie a:hover {
-  padding: 7.5px 15px;
-  font-size: 1.5rem;
-  color: green;
-}
-
 main .containerProyectos .backPizzeria {
   /* Card Pizzería */
-  background: url("../img/VectorPizza.svg") no-repeat center;
+  background: #ebe2e2 url("../img/VectorPizza.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -250,12 +225,6 @@ main .containerProyectos .backPizzeria h2 {
   to {
     transform: scale(1.25);
   }
-}
-
-main .containerProyectos .backPizzeria a:hover {
-  padding: 7.5px 15px;
-  font-size: 1.5rem;
-  color: green;
 }
 
 .containerIndex {
@@ -284,7 +253,7 @@ main .containerProyectos .backPizzeria a:hover {
   /*div*/
   width: 30%;
   height: 100px;
-  background: burlywood url("../img/fotoLucasCorta1.jpg") no-repeat;
+  background: #ebe2e2 url("../img/fotoLucasCorta1.jpg") no-repeat center;
   background-size: contain;
   border-radius: 50%;
   margin-bottom: 5%;
@@ -311,6 +280,7 @@ main .containerProyectos .backPizzeria a:hover {
 }
 
 .containerIndex .cv section ul {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 2%;
@@ -320,7 +290,7 @@ main .containerProyectos .backPizzeria a:hover {
   content: "\f0a4";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: blue;
+  color: #4242d6;
   padding: 5px;
 }
 

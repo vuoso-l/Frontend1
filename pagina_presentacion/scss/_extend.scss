@@ -9,6 +9,14 @@
   color: black;
 }
 
+$colorSec: rgb(66, 66, 214);
+%hoverBacks {
+  //características del hover de los backs de proyectos
+  padding: 7.5px 15px;
+  font-size: 1.5rem;
+  color: $colorSec;
+}
+
 %detallesRedSocial {
   //Footer
   font-weight: 400;

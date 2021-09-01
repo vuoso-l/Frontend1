@@ -11,152 +11,92 @@ main {
       margin: 20px 0px;
     }
     .backPetshop {
-      /* Card petshop */
-      background: url("../img/pawprint\ 1.svg") no-repeat center;
-      background-size: contain;
+      /* Card petshop */      
+      @include backgroundImagenes("../img/pawprint\ 1.svg");
       h2 {
         @extend %subtYAncorProyectos;
         animation: movimiento 3s infinite;
       }
-      @keyframes movimiento {
-        from {
-          transform: scale(1);
-        }
-        to {
-          transform: scale(1.25);
-        }
-      }
+      @include keyframeMovimiento;
       a {
         @extend %subtYAncorProyectos;
         &:hover {
-          padding: 7.5px 15px;
-          font-size: 1.5rem;
-          color: green;
+          @extend %hoverBacks;
         }
       }
     }
     .backHeroes {
       /* Card súper héroes */
-      background: url("../img/liga-justicia-batman.svg") no-repeat center;
-      background-size: contain;
+      @include backgroundImagenes("../img/liga-justicia-batman.svg");
       h2 {
         @extend %subtYAncorProyectos;
         animation: movimiento 3s infinite;
       }
-      @keyframes movimiento {
-        from {
-          transform: scale(1);
-        }
-        to {
-          transform: scale(1.25);
-        }
-      }
+      @include keyframeMovimiento;
       a {
         @extend %subtYAncorProyectos;
         &:hover {
-          padding: 7.5px 15px;
-          font-size: 1.5rem;
-          color: green;
+          @extend %hoverBacks;
         }
       }
     }
     .backCvLucas {
       /* Card cv Lucas */
-      background: url("../img/fotoLucasCorta1.jpg") no-repeat center;
-      background-size: contain;
+      @include backgroundImagenes("../img/fotoLucasCorta1.jpg");
       h2 {
         @extend %subtYAncorProyectos;
         animation: movimiento 3s infinite;
       }
-      @keyframes movimiento {
-        from {
-          transform: scale(1);
-        }
-        to {
-          transform: scale(1.25);
-        }
-      }
+      @include keyframeMovimiento;
       a {
         @extend %subtYAncorProyectos;
         &:hover {
-          padding: 7.5px 15px;
-          font-size: 1.5rem;
-          color: green;
+          @extend %hoverBacks;
         }
       }
     }
     .backCvBatman {
-      /* Card cv Batman */
-      background: url("../img/logo_batman.svg") no-repeat center;
-      background-size: contain;
+      /* Card cv Batman */      
+      @include backgroundImagenes("../img/logo_batman.svg");
       h2 {
         @extend %subtYAncorProyectos;
         animation: movimiento 3s infinite;
       }
-      @keyframes movimiento {
-        from {
-          transform: scale(1);
-        }
-        to {
-          transform: scale(1.25);
-        }
-      }
+      @include keyframeMovimiento;
       a {
         @extend %subtYAncorProyectos;
         &:hover {
-          padding: 7.5px 15px;
-          font-size: 1.5rem;
-          color: green;
+          @extend %hoverBacks;
         }
       }
     }
     .backLemonPie {
       /* Card Lemon Pie */
-      background: url("../img/lemon-pie-1.svg") no-repeat center;
-      background-size: contain;
+      @include backgroundImagenes("../img/lemon-pie-1.svg");
       h2 {
         @extend %subtYAncorProyectos;
         animation: movimiento 3s infinite;
       }
-      @keyframes movimiento {
-        from {
-          transform: scale(1);
-        }
-        to {
-          transform: scale(1.25);
-        }
-      }
+      @include keyframeMovimiento;
       a {
         @extend %subtYAncorProyectos;
         &:hover {
-          padding: 7.5px 15px;
-          font-size: 1.5rem;
-          color: green;
+          @extend %hoverBacks;
         }
       }
     }
     .backPizzeria {
       /* Card Pizzería */
-      background: url("../img/VectorPizza.svg") no-repeat center;
-      background-size: contain;
+      @include backgroundImagenes("../img/VectorPizza.svg");
       h2 {
         @extend %subtYAncorProyectos;
         animation: movimiento 2s infinite;
       }
-      @keyframes movimiento {
-        from {
-          transform: scale(1);
-        }
-        to {
-          transform: scale(1.25);
-        }
-      }
+      @include keyframeMovimiento;
       a {
         @extend %subtYAncorProyectos;
         &:hover {
-          padding: 7.5px 15px;
-          font-size: 1.5rem;
-          color: green;
+          @extend %hoverBacks;
         }
       }
     }

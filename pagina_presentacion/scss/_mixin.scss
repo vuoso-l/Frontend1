@@ -58,3 +58,20 @@
   @include align-items($align-items);
 }
 
+@mixin backgroundImagenes($url){
+  //background de imágenes
+  background: rgb(235, 226, 226) url($url) no-repeat center;
+  background-size: contain;
+}
+
+@mixin keyframeMovimiento{
+  //keyframes backs proyectos
+  @keyframes movimiento {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.25);
+    }
+  }
+}
