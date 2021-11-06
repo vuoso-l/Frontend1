@@ -6,13 +6,36 @@
 
 ## Contenido de la materia
 - HTML
-- CSS:
-- - Propiedades
-- - Modelo de cajas
-- - FlexBox
-- - Media queries - responsive - Mobile First
-- - Pseudoselectores
-- - Animaciones
+  - Etiquetas y atributos
+  - Etiquetas semánticas
+  - Elementos en línea y en bloque
+- CSS
+  - Propiedades
+    - Colores
+    - Inspector de propiedades
+    - Fuentes genéricas
+    - Fuentes web
+    - Fondos
+    - Iconos
+  - Modelo de cajas
+    - Content / padding / border / margin
+    - Posiociones
+    - Posición z-index
+  - FlexBox
+  - Media queries - responsive - Mobile First
+  - Pseudoselectores
+  - Animaciones
+    - Transform
+    - Keyframes
+    - Transition
 - Formularios
+  - Atributos de <form>
+  - Elemento <input>
+  - Elemento <label>
+  - Elemento <textarea>
+  - Elemento <select>
+  - Elemento <option>
+  - Elemento <button>
+  - Radio button y checkboxes
 - SASS
 - Grid Layouts
