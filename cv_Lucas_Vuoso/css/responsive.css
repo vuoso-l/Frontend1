@@ -47,6 +47,7 @@
   }
   main .container section p {
     font-size: 18px;
+    width: 50%;
   }
   main .container section h2 {
     font-size: 22px;
@@ -54,9 +55,16 @@
 }
 
 @media (min-width: 768px) {
-  footer {
-    display: flex;
+  footer a {
     font-size: 20px;
-    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 10px 0px;
+  }
+  footer a {
+    font-size: 22px;
   }
 }

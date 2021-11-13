@@ -1,7 +1,16 @@
 @media (min-width: 768px) {
   footer {
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 10px 0px;
+    a {
+      font-size: 22px;
+    }
   }
 }

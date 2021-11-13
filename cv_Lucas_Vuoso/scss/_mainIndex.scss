@@ -2,8 +2,11 @@ main {
   .container {
     @include flex(column, flex-start);
     padding-bottom: 5px;
-    section {
+    .descripcion{
       @include flex(column, center);
+    }
+    section {
+      @include flex(column, flex-start);
       width: 100%;
       p {
         text-align: justify;
