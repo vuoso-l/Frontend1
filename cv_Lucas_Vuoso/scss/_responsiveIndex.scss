@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+  main {
+    .container {
+      width: 80%;
+      margin: auto;  
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    .container {
+      width: 80%;
+      margin: auto;
+      section {
+        p {
+          font-size: 18px;
+        }
+        h2 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

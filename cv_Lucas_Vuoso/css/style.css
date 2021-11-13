@@ -1,3 +1,8 @@
+footer .redSocial1::after, footer .redSocial2::after {
+  font-weight: 400;
+  padding: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,59 +34,55 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #e6e6e6;
-  padding: 20px 0 0;
 }
 
-header .fotoPerfil {
-  width: 15%;
-  height: 100px;
-  background: burlywood url("../img/fotoLucasCorta1.jpg") no-repeat;
+header .banner {
+  background: burlywood url("../img/portada_linkedin2.jpg") no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  width: 100%;
+  height: 150px;
 }
 
 header h1 {
   color: #005677;
+  font-size: 27px;
   text-transform: uppercase;
   background-color: #c4c4c4;
   font-family: "Times New Roman", Times, serif;
   font-weight: 700;
   letter-spacing: 10px;
-  word-spacing: 10px;
-  width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0px;
+  margin-bottom: 10px;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header nav ul li {
-  list-style-type: none;
-}
-
-header nav ul li a {
-  color: darkblue;
-  padding: 10px;
+header .fotoPerfil {
+  width: 20%;
+  height: 100px;
+  background: burlywood url("../img/perfil_linkedin.jpeg") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 main .container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 100px 0px;
+  padding-bottom: 5px;
 }
 
 main .container section {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-top: 20px;
+  align-items: center;
   width: 100%;
+}
+
+main .container section p {
+  text-align: justify;
+  width: 70%;
+  padding: 10px 0px;
 }
 
 main .container section h2 {
@@ -91,14 +92,15 @@ main .container section h2 {
   font-family: "Times New Roman", Times, serif;
   font-weight: 700;
   letter-spacing: 10px;
-  word-spacing: 10px;
   width: 100%;
-  padding-left: 10px;
+  padding: 10px 0px 10px 15px;
+  font-size: 18px;
 }
 
 main .container section ul {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   padding: 20px 40px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
@@ -115,6 +117,7 @@ main .container section ul li span {
 main .container section dl {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   padding: 20px 40px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
@@ -129,50 +132,30 @@ main .container section dl dd {
   padding: 5px 0;
 }
 
-main .containerSobreMi {
-  padding: 150px 0;
-}
-
-main .containerSobreMi section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main .containerSobreMi section p {
-  text-align: justify;
-  width: 50%;
-}
-
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: #005677;
   padding: 5px 0;
 }
 
 footer a {
   font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   text-transform: uppercase;
-  text-align: center;
   padding: 0 10px;
 }
 
 footer .redSocial1::after {
   content: "\f08c";
   font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
   color: white;
-  padding: 5px;
 }
 
 footer .redSocial2::after {
   content: "\f09b";
   font-family: "Font Awesome 5 Brands";
-  font-weight: 400;
-  padding: 5px;
 }

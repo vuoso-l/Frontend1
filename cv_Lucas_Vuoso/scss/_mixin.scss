@@ -50,3 +50,10 @@
   -webkit-align-items: $value;
   align-items: $value;
 }
+
+@mixin flex($flex-direction, $align-items) {
+  // flex gral
+  @include flexbox;
+  @include flex-direction($flex-direction);
+  @include align-items($align-items);
+}

@@ -1,0 +1,40 @@
+@media (min-width: 768px) {
+  header {
+    .banner {
+      height: 200px;
+    }
+    h1 {
+      font-size: 50px;
+      padding: 20px 0px;
+    }
+    .fotoPerfil {
+      height: 150px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    .banner {
+      height: 250px;
+    }
+    h1 {
+      font-size: 60px;
+    }
+    .fotoPerfil {
+      height: 200px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  header {
+    .banner {
+      height: 300px;
+    }
+    .fotoPerfil {
+      background-size: cover;
+      height: 250px;
+    }
+  }
+}
