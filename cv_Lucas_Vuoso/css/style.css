@@ -58,9 +58,9 @@ header h1 {
 }
 
 header .fotoPerfil {
-  width: 20%;
+  width: 21%;
   height: 100px;
-  background: burlywood url("../img/perfil_linkedin.jpeg") no-repeat;
+  background: burlywood url("../img/perfil_linkedin.jpg") no-repeat;
   background-size: cover;
   border-radius: 50%;
   margin-bottom: 10px;
